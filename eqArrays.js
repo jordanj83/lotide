@@ -1,4 +1,3 @@
-//FUNCTION IMPLEMENTATION
 const assertEqual = function(actual, expected) {
   if (actual === expected) {
     return console.log(`✅✅✅Assertion Passed:  ${actual} ===  ${expected}`)
@@ -18,20 +17,7 @@ const eqArrays = function (a, b) {
 }
 
 
-const assertArraysEqual = function (arr1, arr2) {
-  //outcome is to print a validation message to check your work
-  eqArrays(arr1, arr2) === true {
-    console.log(`assertation passed! ${arr1} is equal to `)
-  } else {
-    console.
-   }
-
-  }
-
-  
 
 
 
-assertEqual(eqArrays([1,2,3], [1,2,3]), true);
-//test ind length of array
-//loop through the elements in the array and test the individual values
+module.exports = eqArrays;

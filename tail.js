@@ -1,12 +1,12 @@
-//FUNCTION IMPLEMENTATION
-const assertEqual = function(actual, expected) {
-  if (actual === expected) {
-    return console.log(`✅✅✅Assertion Passed:  ${actual} ===  ${expected}`);
-  } else {
-    return console.log(`🛑🛑🛑Assertion Failed:  ${actual } !== ${ expected}`);
-  }
+// //FUNCTION IMPLEMENTATION
+// const assertEqual = function(actual, expected) {
+//   if (actual === expected) {
+//     return console.log(`✅✅✅Assertion Passed:  ${actual} ===  ${expected}`);
+//   } else {
+//     return console.log(`🛑🛑🛑Assertion Failed:  ${actual } !== ${ expected}`);
+//   }
 
-};
+// };
 
 const tail = function(arr) {
   let newArray = [];
@@ -16,7 +16,6 @@ const tail = function(arr) {
   return newArray;
 };
 
+module.exports = tail;
 
 
-const result = tail(["Hello", "Lighthouse", "Labs"]);
-assertObjectsEqual(result, ["Lighthouse", "Labs"]); // => will always fail!
