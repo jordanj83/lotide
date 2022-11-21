@@ -50,7 +50,7 @@ const firstNames = [
 
 const result1 = countOnly(firstNames, { "Jason": true, "Karima": true, "Fang": true, "Agouhanna": false });
 
-assertEqual(result1["Jason"], 1);
-assertEqual(result1["Karima"], undefined);
-assertEqual(result1["Fang"], 2);
-assertEqual(result1["Agouhanna"], undefined);
+assertObjectsEqual(result1["Jason"], 1);
+assertObjectsEqual(result1["Karima"], undefined);
+assertObjectsEqual(result1["Fang"], 2);
+assertObjectsEqual(result1["Agouhanna"], undefined);

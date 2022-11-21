@@ -3,6 +3,10 @@ const assertEqual = function (actual, expected) {
     return console.log(`✅✅✅Assertion Passed:  ${actual} ===  ${expected}`)
   }
 
+  // = assigning values
+  // == checking values
+  // === chcking values and dataTypes
+
   else {
     return console.log(`🛑🛑🛑Assertion Failed:  ${actual} !== ${expected}`)
   }
@@ -16,7 +20,7 @@ const eqObjects = function (obj1, obj2) {
   }
 
   for (key in obj1) {
-    if (obj1[key] != obj2[key]) {
+    if (obj1[key] !== obj2[key]) {
       return false
     }
 
@@ -29,12 +33,12 @@ const eqObjects = function (obj1, obj2) {
 
 
 const ab = { a: "1", b: "2" };
-const ba = { b: "2", a: "1" };
+const ba = { b: "2", a: "3" };
 // => true
 
 const abc = { a: "1", b: "2", c: "3" };
 ; // => false
 
-assertEqual(eqObjects(ab, ba), true)
+assertObjectsEqual(eqObjects(ab, ba), true)
 
-assertEqual(eqObjects(ab, abc), false)
+assertObjectsEqual(eqObjects(ab, abc), false)
