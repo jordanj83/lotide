@@ -18,36 +18,24 @@ const assertArraysEqual = function (arr1, arr2) {
 //assertArraysEqual([1,2,3,4],[1,2,4,5])
 
 
-const middle = function(arr) {
-  let midArr = []
-  if (arr.length <= 2) {
-    return midArr = []
+const middle = function(array) {
+  let middleValues = []
+  if (array.length < 3 ){
+    return middleValues;
+  } 
+  let middleIndex = Math.round((array.length - 1) / 2)// 2
+  if (array.length % 2 === 0){   //is even
+    middleValues.push(array[middleIndex -1]);
+    middleValues.push(array[middleIndex]);
   }
-  else if (arr.length % 2 !== 0) {
-    return midArr = arr[Math.floor(arr.length / 2)]
-  }
-  else
-  {
-    midArr.push(arr[(arr.length / 2)])
-    midArr.push(arr[(arr.length / 2) - 1])
-  }
-  return midArr
+  if (array.length % 2 !== 0){ //is odd
+    middleValues.push(array[middleIndex])
+} 
+return middleValues;
 }
 
-assertArraysEqual(middle([1,2,2,4]),[2,4])
-// TEST CASES //
-//let testEven = [1,2,3,4,88,99,7,8,9,10];
-//let testOdd = [1,2,3,4,5,6,7];
-//let testShort = [1,2];
-//let testBlank = [];
-//let testArrString = ["hello","lighthouse","labs","yeah"];
-//let testNull = null;
 
-//console.log(middle(testEven));
-//console.log(middle(testOdd));
-//console.log(middle(testShort));
-//console.log(middle(testBlank));
-//console.log(middle(testNull));
-//console.log(middle(testArrString));
-//assertArraysEqual(testEven,[1,2,3,4,88,99,7,8,9,10]);
-//assertArraysEqual(testArrString,["hello","lighthouse","labs","yeah"]);
+module.exports = {
+  middle, assertArraysEqual
+
+}
