@@ -66,3 +66,12 @@ const without = function (source, itemsToRemove) {
 
 
 module.exports = without
+
+
+let age = 33
+
+const person = {
+  name: "Pat",
+  age
+
+}

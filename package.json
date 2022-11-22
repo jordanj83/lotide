@@ -1,8 +1,8 @@
 {
-  "name": "lotide",
+  "name": "@jordanbjohnson/lotide",
   "version": "1.0.0",
-  "description": "",
-  "main": "assertArraysEqual.js",
+  "description": "composition of functions that can be used as methods ",
+  "main": "index.js",
   "directories": {
     "test": "test"
   },
@@ -13,7 +13,7 @@
     "type": "git",
     "url": "git+https://github.com/jordanj83/lotide.git"
   },
-  "author": "",
+  "author": "Jordan Johnson, Raeme Khatib, Krista Kourtessis",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/jordanj83/lotide/issues"
