@@ -39,7 +39,7 @@ const assertArraysEqual = function (arr1, arr2) {
 //console.log(letterPositions("lighthouse in the house").i)
 assertArraysEqual(letterPositions("hello").e, [1]);
 
-
+module.exports = letterPositions
 
 
 

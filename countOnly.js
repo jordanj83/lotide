@@ -54,3 +54,6 @@ assertObjectsEqual(result1["Jason"], 1);
 assertObjectsEqual(result1["Karima"], undefined);
 assertObjectsEqual(result1["Fang"], 2);
 assertObjectsEqual(result1["Agouhanna"], undefined);
+
+
+module.exports = countOnly;

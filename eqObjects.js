@@ -1,15 +1,15 @@
 const assertEqual = function (actual, expected) {
-  if (actual === expected) {
-    return console.log(`✅✅✅Assertion Passed:  ${actual} ===  ${expected}`)
-  }
+  // if (actual === expected) {
+  //   return console.log(`✅✅✅Assertion Passed:  ${actual} ===  ${expected}`)
+  // }
 
-  // = assigning values
-  // == checking values
-  // === chcking values and dataTypes
+  // // = assigning values
+  // // == checking values
+  // // === chcking values and dataTypes
 
-  else {
-    return console.log(`🛑🛑🛑Assertion Failed:  ${actual} !== ${expected}`)
-  }
+  // else {
+  //   return console.log(`🛑🛑🛑Assertion Failed:  ${actual} !== ${expected}`)
+  // }
 
 }
 //function will take in 2 objects and return true or false if its a perfect match
@@ -39,6 +39,8 @@ const ba = { b: "2", a: "3" };
 const abc = { a: "1", b: "2", c: "3" };
 ; // => false
 
-assertObjectsEqual(eqObjects(ab, ba), true)
+// assertObjectsEqual(eqObjects(ab, ba), true)
 
-assertObjectsEqual(eqObjects(ab, abc), false)
+// assertObjectsEqual(eqObjects(ab, abc), false)
+
+module.exports = eqObjects;

@@ -25,41 +25,44 @@ const without = function (source, itemsToRemove) {
 // assertArraysEqual([1, 2, 3] , without([1, 2,3, 4], 4))
 
 
-const eqArrays = function (arr1, arr2) {
-  return Array.isArray(arr1) &&
-    Array.isArray(arr2) &&
-    arr1.length === arr2.length &&
-    arr1.every((val, index) => val === arr2[index]);
-}
+// const eqArrays = function (arr1, arr2) {
+//   return Array.isArray(arr1) &&
+//     Array.isArray(arr2) &&
+//     arr1.length === arr2.length &&
+//     arr1.every((val, index) => val === arr2[index]);
+// }
 
 
-const assertArraysEqual = function (arr1, arr2) {
-  //outcome is to print a validation message to check your work
-  if (eqArrays(arr1, arr2) === true) {
-    console.log(`assertation passed! ${arr1} is equal to ${arr2} `)
-  } else {
-    console.log(`assertation failed! ${arr1} is not equal to ${arr2} `)
-  }
-}
+// const assertArraysEqual = function (arr1, arr2) {
+//   //outcome is to print a validation message to check your work
+//   if (eqArrays(arr1, arr2) === true) {
+//     console.log(`assertation passed! ${arr1} is equal to ${arr2} `)
+//   } else {
+//     console.log(`assertation failed! ${arr1} is not equal to ${arr2} `)
+//   }
+// }
 
 
-const assertEqual = function (actual, expected) {
-  if (actual === expected) {
-    return console.log(`✅✅✅Assertion Passed:  ${actual} ===  ${expected}`)
-  }
+// const assertEqual = function (actual, expected) {
+//   if (actual === expected) {
+//     return console.log(`✅✅✅Assertion Passed:  ${actual} ===  ${expected}`)
+//   }
 
-  else {
-    return console.log(`🛑🛑🛑Assertion Failed:  ${actual} !== ${expected}`)
-  }
+//   else {
+//     return console.log(`🛑🛑🛑Assertion Failed:  ${actual} !== ${expected}`)
+//   }
 
-}
+// }
 
 
 //assertEqual(eqArrays([1, 2, 3], [1, 2, 3]), true);
 //test ind length of array
 //loop through the elements in the array and test the individual values
 
-console.log(without([1, 2, 3], [1])) // => [2, 3]
-console.log(without(["1", "2", "3"], [1, 2, "3"])) // => ["1", "2"]
+// console.log(without([1, 2, 3], [1])) // => [2, 3]
+// console.log(without(["1", "2", "3"], [1, 2, "3"])) // => ["1", "2"]
 
-assertArraysEqual([1, 2, 3] , without([1, 2,3, 4], [4]))
+// assertArraysEqual([1, 2, 3] , without([1, 2,3, 4], [4]))
+
+
+module.exports = without
